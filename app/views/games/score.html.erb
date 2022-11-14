@@ -1,0 +1,11 @@
+<h1>Result</h1>
+<% case @result %>
+<% when 'valid' %>
+  <p><strong>Congratulations!</strong> <%= @word.upcase %> is a valid English word!</p>
+<% when 'invalid' %>
+  <p>Sorry but <strong><%= @word.upcase %></strong> does not seem to be a valid English word...</p>
+<% when 'error' %>
+  <p>Sorry but <strong><%= @word.upcase %></strong> can't be built out of <%= @letters.split.join(', ') %></p>
+<% end %>
+
+<%= link_to 'Play again', new_path %>

@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.ul-clean {
+  list-style-type: none;
+  padding: 0;
+}
+
+.letter {
+  display: inline-block;
+  background-color: #307fff;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid #2053a7;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 8px 12px;
+  box-shadow: 5px 5px 5px lightgrey;
+  margin: 0 8px 16px 0;
+}
